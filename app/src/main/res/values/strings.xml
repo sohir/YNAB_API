@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">YNAB</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data">No data founded</string>
+    <string name="no_connection">No network available, please check your connection</string>
+    <string name="error_happens">Something error happened</string>
+    <string name="name">NAME</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="comics">COMICS</string>
+    <string name="budget_label">Budget 1</string>
+    <string name="account_name">Account Name</string>
+    <string name="account_type">Account Type</string>
+    <string name="account_balance">20.000</string>
+    <string name="last_modified">"Last used : "</string>
+    <string name="budget_details">Budget Details \u2022\u2022\u2022</string>
+    <string name="category_name">Category Name</string>
+    <string name="group_name">Group name</string>
+</resources>

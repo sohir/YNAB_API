@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gragh"
+    app:startDestination="@id/budgetsListFragment">
+
+    <fragment
+        android:id="@+id/budgetsListFragment"
+        android:name="com.task.ynab.budgetslist.BudgetsListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_budget_list" >
+        <action
+            android:id="@+id/list_to_details"
+            app:destination="@id/budgetDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/budgetDetailsFragment"
+        android:name="com.task.ynab.budgetdetails.BudgetDetails"
+        android:label="{title}"
+        tools:layout="@layout/fragment_budget_details" >
+        <action
+            android:id="@+id/detailsFragment_to_budgetsListFragment"
+            app:destination="@id/budgetsListFragment" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>
